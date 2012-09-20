@@ -1,6 +1,7 @@
 #Algorithms in Python
 
 这是学习笔记[Algorithms](https://github.com/hahastudio/Algorithms)，欢迎访问。
+
 这个项目的教材基于Algorithms by Sanjoy Dasgupta & Christos Papadimitriou & Umesh Vazirani。
 
 目前进度：
