@@ -12,3 +12,4 @@
     * Basic arithmetic     `basic_arithmetic.py`
     * modular arithmetic   `modular_arithmetic.py`
     * Euclid's algorithm   `euclid.py`
+    * Primality test       `primality.py`
