@@ -28,3 +28,4 @@
     * Universal hashing    `hashing.py`
 * Chapter 2: Divide-and-conquer algorithms
     * divide-and-conquer multiplication `basic_arithmetic.py`
+    * Mergesort                         `mergesort.py`
