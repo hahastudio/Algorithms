@@ -8,7 +8,7 @@
 
 ##关于实现
 
-基本上所有的实现方案都是照抄书上的伪代码_(:3」∠)﻿_，让人感觉Python真是简单易懂，写出来的代码跟书上的伪代码没差嘛！所以，嗯，也就是说， **这些实现都只是玩具，不要用到实际环境中** 。
+基本上所有的实现方案都是照抄书上的伪代码_ (:3」∠)_ 让人感觉Python真是简单易懂，写出来的代码跟书上的伪代码没差嘛！所以，嗯，也就是说， **这些实现都只是玩具，不要用到实际环境中** 。
 
 比如说，关于求`(x**y) % z`，在 `modular_arithmetic.py` 中有函数 `modexp(x, y, z)` ，但我觉得你不用想都知道，肯定还是 `pow(x, y[, z])` 来得更快。再比如UniHashing类，肯定也没有dict类高效且经得起碰撞。
 
@@ -26,3 +26,5 @@
     * Generating primes    `primality.py`
     * RSA                  `rsa.py`
     * Universal hashing    `hashing.py`
+* Chapter 2: Divide-and-conquer algorithms
+    * divide-and-conquer multiplication `basic_arithmetic.py`
