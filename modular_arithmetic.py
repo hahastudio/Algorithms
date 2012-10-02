@@ -6,8 +6,8 @@ def modexp(x, y, N):
     """
     if y == 0:
         return 1
-    z = modexp(x, y / 2, N)
-    if y % 2 == 0:
+    z = modexp(x, y>>1, N)
+    if y & 1 == 0:
         return z * z % N
     else:
         return x * z * z % N
