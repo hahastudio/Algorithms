@@ -29,3 +29,5 @@
 * Chapter 2: Divide-and-conquer algorithms
     * divide-and-conquer multiplication `basic_arithmetic.py`
     * Mergesort                         `mergesort.py`
+    * the fast Fourier transform        `fft.py`
+    * Polynomial multiplication         `fft.py`
