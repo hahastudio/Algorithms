@@ -31,3 +31,8 @@
     * Mergesort                         `mergesort.py`
     * the fast Fourier transform        `fft.py`
     * Polynomial multiplication         `fft.py`
+* Chapter 3: Decompositions of graphs
+    * Depth-first search                `dfs.py`
+* Chapter 4: Paths in graphs
+    * Breadth-first search              `bfs.py`
+    * Dijkstra's shorest-path algorithm `shortest_path.py`

@@ -22,4 +22,4 @@ class RSA(object):
     def decrypt(self, enc):
         """decrypt the list of encoded message."""
         decode_list = [pow(i, self.d, self.N) for i in enc]
-        return "".join(chr(i) for i in decode_list)
+        return "".join(unichr(i) for i in decode_list)
