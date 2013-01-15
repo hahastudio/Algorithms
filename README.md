@@ -38,5 +38,5 @@
     * Dijkstra's shortest-path algorithm `shortest_path.py`
     * Bellman-Ford algorithm for single-source shortest path `shortest_path.py`
 * Chapter 5: Greedy algorithms
-    * Kruskal's mininum spanning tree algorithm
-    
+    * Kruskal's mininum spanning tree algorithm `mst.py`
+
