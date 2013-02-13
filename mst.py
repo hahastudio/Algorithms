@@ -1,3 +1,5 @@
+from binary_heap import binary_heap
+
 class dset(object):
 	"""A data structure for disjoint sets."""
 	def __init__(self, n):
@@ -54,3 +56,38 @@ Output: A minimum spanning tree defined by the edges X
 			X.add((u, v))
 			d.union(u, v)
 	return X
+
+def prim(G):
+	"""Input: A connected undirected graph G=(V, E) with edge weights
+Output: A minimum spanning tree defined by the dict prev
+	"""
+	V, E = G
+	cost = {}
+	prev = {}
+	for u in V:
+		cost[u] = float("inf")
+		prev[u] = None
+	cost[V[0]] = 0
+	H = binary_heap(V, key=lambda u:cost[u])
+	while len(H):
+		v = H.deletemin()
+		for z in E[v]:
+			weightVZ = E[v][z]
+			if cost[z] > weightVZ and z in H.h[1:len(H)+1]:
+				cost[z] = weightVZ
+				prev[z] = v
+				H.decreasekey(z)
+	return prev
+
+if __name__ == '__main__':
+	V = a, b, c, d, e, f = range(6)
+	E = {
+		a: {b:5, c:6, d:4},
+		b: {a:5, c:1, d:2},
+		c: {a:6, b:1, d:2, e:5, f:3},
+		d: {a:4, b:2, c:2, f:4},
+		e: {c:5, f:4},
+		f: {c:3, d:4, e:4}
+	}
+	G = (V, E)
+	print prim(G)
