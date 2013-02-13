@@ -40,5 +40,5 @@
 * Chapter 5: Greedy algorithms
     * Kruskal's mininum spanning tree algorithm `mst.py`
     * Prim's mininum spanning tree algorithm `binary_heap.py` `mst.py`
-    
+    * Huffman encoding `huffman.py`
 
