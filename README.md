@@ -41,4 +41,6 @@
     * Kruskal's mininum spanning tree algorithm `mst.py`
     * Prim's mininum spanning tree algorithm `binary_heap.py` `mst.py`
     * Huffman encoding `huffman.py`
+* Chapter 6: Dynamic programming
+	* Edit distance `edit_distance.py`
 
