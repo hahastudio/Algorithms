@@ -38,6 +38,12 @@ class Polynomial(object):
 		f2 = FFT(p2.a, w)
 		fc = [i[0]*i[1] for i in zip(f1, f2)]
 		c = [abs(i/(degree+1)) if i.real>0 else -abs(i/(degree+1)) for i in FFT(fc, w.conjugate())]
+		c = [i if abs(i) > 1e-5 else 0 for i in c]
+		n = len(c)
+		for i in c[::-1]:
+			if not i:
+				n -= 1
+		c = c[:n] or (0,)
 		return Polynomial(c)
 
 	def __repr__(self):
